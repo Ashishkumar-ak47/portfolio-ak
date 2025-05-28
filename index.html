@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    .project-card {
+      transition: all 0.4s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-embed {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-pink-100 to-blue-100 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white">
+
+  <!-- Animated Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 shadow-lg sticky top-0 z-50">
+    <h1 class="text-3xl font-bold">👨‍💻  Ashish Kumar</h1>
+    <button onclick="document.documentElement.classList.toggle('dark')" class="px-5 py-2 bg-white text-purple-700 font-semibold rounded shadow-md hover:bg-gray-200">
+      Toggle Theme
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-24 px-6 text-center relative z-10">
+    <h2 class="text-5xl font-extrabold mb-6 text-purple-700 animate-bounce">Hi, I'm Ashish!</h2>
+    <p class="text-xl max-w-3xl mx-auto mb-10">
+      Full-stack developer blending design and code to craft interactive web experiences ✨
+    </p>
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_x62chJ.json" background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop autoplay></lottie-player>
+  </section>
+
+  <!-- Projects -->
+  <section class="py-20 px-6 bg-gradient-to-br from-yellow-100 to-pink-200 dark:from-gray-800 dark:to-gray-900 reveal relative z-10">
+    <h3 class="text-4xl font-bold text-center text-pink-700 mb-12">🛠️ Projects</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+        <img src="https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif" alt="p1" class="rounded mb-4 w-full h-48 object-cover">
+        <h4 class="text-2xl font-bold text-pink-600">collegetips photo gallary</h4>
+        <p class="mt-2 mb-4">A project based on simple html ,css and javascript.</p>
+        <a href="#" class="text-blue-600 underline">View Project</a>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+        <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Project 2" class="rounded mb-4 w-full h-48 object-cover">
+        <h4 class="text-2xl font-bold text-purple-600">cloud based weathering app</h4>
+        <p class="mt-2 mb-4">basic html feature and amazon services.</p>
+        <a href="#" class="text-blue-600 underline">View Project</a>
+      </div>
+      <div class="project-card bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+        <div class="video-embed mb-4">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h4 class="text-2xl font-bold text-blue-600">Project Three</h4>
+        <p class="mt-2 mb-4">.</p>
+        <a href="#" class="text-blue-600 underline">View Project</a>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- Latest Posts -->
+  <section class="py-20 px-6 bg-white dark:bg-gray-900 reveal relative z-10">
+    <h3 class="text-4xl font-bold text-center text-purple-700 mb-10">📝 Latest Posts</h3>
+    <div class="flex flex-col space-y-10 max-w-3xl mx-auto">
+      <article class="p-6 rounded-xl shadow-lg post-reveal"
+        style="background: linear-gradient(135deg, #fbbf24, #f97316); color: #1e1e1e;">
+        <h4 class="text-2xl font-bold mb-2">Why I Love Tailwind CSS</h4>
+        <time class="text-sm opacity-80">April 12, 2025</time>
+        <p class="mt-3 font-semibold">Tailwind lets me rapidly build responsive, modern interfaces. Here’s how I use it...</p>
+      </article>
+      <article class="p-6 rounded-xl shadow-lg post-reveal"
+        style="background: linear-gradient(135deg, #8b5cf6, #ec4899); color: white;">
+        <h4 class="text-2xl font-bold mb-2">Creating Animated Portfolios</h4>
+        <time class="text-sm opacity-80">March 30, 2025</time>
+        <p class="mt-3 font-semibold">Animations can transform the feel of a site. Let’s explore some great tools to try.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- About Me -->
+<section class="py-16 px-8 reveal text-center bg-white dark:bg-gray-900">
+  <h3 class="text-4xl font-bold mb-6 text-purple-700">👋 About Me</h3>
+  <p class="max-w-3xl mx-auto text-lg mb-8">
+    I’m not your average developer — I love making things that not only work well but <em>feel</em> awesome.
+    Whether it's a mini-game or a startup MVP, I bring good vibes and clean code. Always learning, always experimenting,
+    always delivering 🚀
+  </p>
+
+  <!-- Skills List -->
+  <div class="max-w-4xl mx-auto mt-8 grid grid-cols-2 md:grid-cols-3 gap-6 text-lg font-semibold text-gray-700 dark:text-gray-200">
+    <div>🌐 HTML5 & CSS3</div>
+    <div>⚛️ React & Next.js</div>
+    <div>🎨 Tailwind CSS</div>
+    <div>🖥️ JavaScript</div>
+    <div>💾 Node.js & Express</div>
+    <div>🛢️ MongoDB / SQL</div>
+    <div>🧪 Git & GitHub</div>
+    <div>📱 Responsive Design</div>
+    <div>🎮 C & C++</div>
+  </div>
+
+  <!-- Lottie Animation Placeholder -->
+  <div class="mt-12">
+    <lottie-player
+      src="https://assets10.lottiefiles.com/packages/lf20_pwohahvd.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px; margin: auto;"
+      loop
+      autoplay
+    ></lottie-player>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section class="py-20 px-6 text-center bg-purple-100 dark:bg-gray-900 reveal relative z-10">
+  <h3 class="text-4xl font-bold mb-6 text-purple-700">📬 Contact Me</h3>
+  <div class="max-w-xl mx-auto space-y-6 text-lg text-purple-800 dark:text-purple-300">
+    <p>Email: <a href="mailto:your.email@example.com" class="underline hover:text-purple-600 dark:hover:text-purple-400">royalrajput574574@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank" rel="noopener" class="underline hover:text-purple-600 dark:hover:text-purple-400">https://github.com/Ashishkumar-ak47/-collegetipsphotogallary</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener" class="underline hover:text-purple-600 dark:hover:text-purple-400">https://www.linkedin.com/i
+n/ashish-kumar-
+2424ba259</a></p>
+  </div>
+</section>
+ <!-- Resume Download -->
+  <section class="py-16 px-6 text-center bg-pink-100 dark:bg-gray-800 reveal">
+    <a href="resume.pdf" download class="px-10 py-4 bg-green-500 text-white font-bold rounded-xl shadow-lg hover:scale-110 transform transition-transform inline-block">
+      📄 Download My Resume
+    </a>
+  </section>
+
+
+  <!-- Thank You Section -->
+  <section class="py-20 px-6 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white text-center rounded-lg max-w-4xl mx-auto mt-20 reveal">
+    <h3 class="text-4xl font-extrabold mb-6">Thank You for Visiting!</h3>
+    <img src="https://media.giphy.com/media/l4pTfx2qLszoacZRS/giphy.gif" alt="Thank You Animation" class="mx-auto w-64 rounded-lg shadow-lg" />
+  </section>
+
+ <!-- Contact Form -->
+  <section class="py-20 px-6 text-center bg-purple-100 dark:bg-gray-900 reveal relative z-10">
+    <h3 class="text-4xl font-bold mb-6 text-purple-700">📬 Contact</h3>
+    <form class="max-w-xl mx-auto space-y-6">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none" />
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none" />
+      <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none"></textarea>
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded shadow">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-gray-600 dark:text-gray-400 bg-gradient-to-r from-pink-200 to-yellow-100 dark:from-gray-900 dark:to-gray-800">
+    © 2025 John Doe. All rights reserved.
+  </footer>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#a855f7" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#ec4899",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 140, line_linked: { opacity: 0.7 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+
+    ScrollReveal().reveal(".reveal", {
+      duration: 1000,
+      distance: "60px",
+      origin: "bottom",
+      easing: "ease-in-out",
+      interval: 200
+    });
+
+    ScrollReveal().reveal(".post-reveal", {
+      distance: "40px",
+      origin: "bottom",
+      duration: 1000,
+      easing: "ease-out",
+      interval: 400,
+      opacity: 0,
+      scale: 0.9,
+      cleanup: true
+    });
+  </script>
+
+</body>
+
+</html>
